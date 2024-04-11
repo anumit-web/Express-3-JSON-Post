@@ -13,3 +13,9 @@ https://stackoverflow.com/questions/10005939/how-do-i-consume-the-json-post-data
 JSON Validate
 
 https://jsonlint.com/
+
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"city1":"Athens","city2":"Madrid","city3":"Paris"}' \
+  http://localhost:3000/postcities
+
